@@ -54,6 +54,10 @@ public class SampleEventListenerProvider implements EventListenerProvider {
 
         sb.append(event.getIpAddress());
 
+        sb.append(", sessionId=");
+
+        sb.append(event.getSessionId());
+
 
         if (event.getError() != null) {
 
